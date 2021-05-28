@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="calc">
+        <div id="main">
+            <div id="out">
+                <div id="conv" >
+                    <div id="mode-length">length</div>
+                    <div id="mode-weight">weight</div>
+                    <div id="mode-area">area</div>
+                    <div id="mode-bin">BIN</div>
+                    <div id="mode-dec" class="active">DEC</div>
+                    <div id="mode-hex">HEX</div>
+                </div>
+
+                <input id="history" value="22+2" class="nhover" disabled>
+                <input id="expression" value="awd" class="nhover" autofocus>
+            </div>
+
+            <div id="dec" class="buttons hidden">
+
+                <input id="enter-memory-recall" value="MR" type="button">
+                <input id="enter-memory-clear" value="MC" type="button">
+                <input id="enter-memory-plus" value="M+" type="button">
+                <input id="enter-memory-minus" value="M-" type="button">
+                <input id="enter-clear" value="AC" type="button">
+
+                <input id="enter-percent" value="&pi;" type="button">
+                <input id="enter-posneg" value="e" type="button">
+                <input id="enter-minus" value="&radic;2" type="button">
+                <input id="enter-multiply" value="X&sup2;" type="button">
+                <input id="enter-divide" value="1/X" type="button">
+
+                <input id="enter-percent" value="%" type="button">
+                <input id="enter-posneg" value="+" type="button">
+                <input id="enter-minus" value="-" type="button">
+                <input id="enter-multiply" value="*" type="button">
+                <input id="enter-divide" value="÷" type="button">
+                
+                <input id="enter-factorial" value="x!" type="button">
+                <input id="enter-7" class="number" value="7" type="button">
+                <input id="enter-8" class="number" value="8" type="button">
+                <input id="enter-9" class="number" value="9" type="button">
+                <input id="enter-posneg" value="+/-" type="button">
+                
+                <input id="enter-exponent" value="x&#8319;" type="button">
+                <input id="enter-4" class="number" value="4" type="button">
+                <input id="enter-5" class="number" value="5" type="button">
+                <input id="enter-6" class="number" value="6" type="button">
+                <input id="enter-4" class="" value=")" type="button">
+
+                <input id="" class="" value="&radic;x" type="button">
+                <input id="enter-1" class="number" value="1" type="button">
+                <input id="enter-2" class="number" value="2" type="button">
+                <input id="enter-3" class="number" value="3" type="button">
+                <input id="enter-4" class="" value="(" type="button">
+           
+                <input id="enter-0" class="number" value="0" type="button">
+                <input id="enter-dot" value="." type="button">
+                <input id="enter-equal" value="=" type="button">
+            </div>
+
+
+
+
+            <div id="hex" class="hidden buttons">
+
+                <input id="enter-percent" value="A" type="button">
+                <input id="enter-posneg" value="+" type="button">
+                <input id="enter-minus" value="-" type="button">
+                <input id="enter-multiply" value="*" type="button">
+                <input id="enter-divide" value="÷" type="button">
+                
+                <input id="enter-factorial" value="B" type="button">
+                <input id="enter-7" class="number" value="7" type="button">
+                <input id="enter-8" class="number" value="8" type="button">
+                <input id="enter-9" class="number" value="9" type="button">
+                <input id="enter-posneg" value="+/-" type="button">
+                
+                <input id="enter-exponent" value="C" type="button">
+                <input id="enter-4" class="number" value="4" type="button">
+                <input id="enter-5" class="number" value="5" type="button">
+                <input id="enter-6" class="number" value="6" type="button">
+                <input id="enter-4" class="" value="E" type="button">
+
+                <input id="" class="" value="D" type="button">
+                <input id="enter-1" class="number" value="1" type="button">
+                <input id="enter-2" class="number" value="2" type="button">
+                <input id="enter-3" class="number" value="3" type="button">
+                <input id="enter-4" class="" value="F" type="button">
+           
+                <input id="enter-0" class="number" value="0" type="button">
+                <input id="enter-clear" value="AC" type="button">
+                <input id="enter-equal" value="=" type="button">
+            </div>
+
+
+            <div id="bin" class="hidden buttons">
+
+                <input id="enter-posneg" value="+" type="button">
+                <input id="enter-minus" value="-" type="button">
+                <input id="enter-multiply" value="*" type="button">
+                <input id="enter-divide" value="÷" type="button">
+                <input id="enter-clear" value="AC" type="button">
+
+                <div id="o-t">
+                    <input id="enter-0-bin" class="number" value="0" type="button">
+                    <input id="enter-1-bin" class="number" value="1" type="button">
+                </div>
+
+                <input id="enter-equal-bin" value="=" type="button">
+
+            </div>
+
+
+            <div id="length" class="hidden buttons length">
+                <div id="lol">
+                    <input id="unit-mm" class="unit-from active" value="MM" type="button">
+                    <input id="unit-cm" class="unit-from" value="CM" type="button">
+                    <input id="unit-m" class="unit-from" value="M" type="button">
+                    <input id="unit-km" class="unit-from" value="KM" type="button">
+                    <input id="enter-clear" value="AC" type="button">
+                    <!-- row -->
+                    <input id="unit-mm" class="unit-to" value="MM" type="button">
+                    <input id="unit-cm" class="unit-to active" value="CM" type="button">
+                    <input id="unit-m" class="unit-to" value="M" type="button">
+                    <input id="unit-km" class="unit-to" value="KM" type="button">
+                </div>
+
+                <div id="grid3">
+                    <input id="enter-7" class="number" value="7" type="button">
+                    <input id="enter-8" class="number" value="8" type="button">
+                    <input id="enter-9" class="number" value="9" type="button">
+                    
+                    <input id="enter-4" class="number" value="4" type="button">
+                    <input id="enter-5" class="number" value="5" type="button">
+                    <input id="enter-6" class="number" value="6" type="button">
+
+                    <input id="enter-1" class="number" value="1" type="button">
+                    <input id="enter-2" class="number" value="2" type="button">
+                    <input id="enter-3" class="number" value="3" type="button">
+                 </div>
+                
+                 <div id="conv">            <input id="enter-0" class="number" value="0" type="button">
+                    <input id="enter-dot" value="." type="button">
+                    <input id="enter-equal" value="=" type="button"></div>
+     
+            </div>
+
+
+            <div id="weight" class="hidden buttons length">
+                <div id="lol">
+                    <input id="unit-mm" class="unit-from active" value="MG" type="button">
+                    <input id="unit-cm" class="unit-from" value="G" type="button">
+                    <input id="unit-m" class="unit-from" value="KG" type="button">
+                    <input id="unit-km" class="unit-from" value="T" type="button">
+                    <input id="enter-clear" value="AC" type="button">
+                    <!-- row -->
+                    <input id="unit-mm" class="unit-to" value="MG" type="button">
+                    <input id="unit-cm" class="unit-to active" value="G" type="button">
+                    <input id="unit-m" class="unit-to" value="KG" type="button">
+                    <input id="unit-km" class="unit-to" value="T" type="button">
+                </div>
+
+                <div id="grid3">
+                    <input id="enter-7" class="number" value="7" type="button">
+                    <input id="enter-8" class="number" value="8" type="button">
+                    <input id="enter-9" class="number" value="9" type="button">
+                    
+                    <input id="enter-4" class="number" value="4" type="button">
+                    <input id="enter-5" class="number" value="5" type="button">
+                    <input id="enter-6" class="number" value="6" type="button">
+
+                    <input id="enter-1" class="number" value="1" type="button">
+                    <input id="enter-2" class="number" value="2" type="button">
+                    <input id="enter-3" class="number" value="3" type="button">
+                 </div>
+                
+                 <div id="conv">   
+                <input id="enter-0" class="number" value="0" type="button">
+                <input id="enter-dot" value="." type="button">
+                <input id="enter-equal" value="=" type="button">
+                </div>
+            </div>
+
+            <div id="area" class="hidden buttons length">
+                <div id="lol">
+                    <input id="unit-mm" class="unit-from active" value="CM2" type="button">
+                    <input id="unit-cm" class="unit-from" value="M2" type="button">
+                    <input id="unit-m" class="unit-from" value="KM2" type="button">
+                    <input id="unit-km" class="unit-from" value="H" type="button">
+                    <input id="enter-clear" value="AC" type="button">
+                    <!-- row -->
+                    <input id="unit-mm" class="unit-to" value="CM2" type="button">
+                    <input id="unit-cm" class="unit-to active" value="M2" type="button">
+                    <input id="unit-m" class="unit-to" value="KM2" type="button">
+                    <input id="unit-km" class="unit-to" value="H" type="button">
+                </div>
+
+                <div id="grid3">
+                    <input id="enter-7" class="number" value="7" type="button">
+                    <input id="enter-8" class="number" value="8" type="button">
+                    <input id="enter-9" class="number" value="9" type="button">
+                    
+                    <input id="enter-4" class="number" value="4" type="button">
+                    <input id="enter-5" class="number" value="5" type="button">
+                    <input id="enter-6" class="number" value="6" type="button">
+
+                    <input id="enter-1" class="number" value="1" type="button">
+                    <input id="enter-2" class="number" value="2" type="button">
+                    <input id="enter-3" class="number" value="3" type="button">
+                 </div>
+                
+                 <div id="conv">   
+                <input id="enter-0" class="number" value="0" type="button">
+                <input id="enter-dot" value="." type="button">
+                <input id="enter-equal" value="=" type="button">
+                 </div>
+            </div>
+
+
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
