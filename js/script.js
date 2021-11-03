@@ -253,6 +253,8 @@ document.querySelectorAll("div#calc div.buttons input").forEach(function (button
 document.querySelectorAll("div#calc div#conv div").forEach(function (button) {
     button.addEventListener("click", function() {
         let mode = button.id.replace("mode-", "")
+        document.querySelectorAll("div#calc div#conv div").forEach(function (Mbutton) {Mbutton.classList.remove("active")})
+        button.classList.add("active")
 
         document.querySelectorAll("div.buttons").forEach(function(button) {
             button.classList.add("hidden")
